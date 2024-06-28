@@ -1,0 +1,204 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[slovene]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{url}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{makeidx}
+\usepackage[
+    colorlinks=true,
+    linkcolor=violet,      % Color of internal links (sections, pages, etc.)
+    citecolor=teal,    % Color of citation links
+    filecolor=magenta,  % Color of file links
+    urlcolor=purple       % Color of external links (URLs)
+]{hyperref}
+%\usepackage{titlesec}
+\allowdisplaybreaks
+\makeindex
+
+%--------------------------------------OBLIKA DOKUMENTA--------------------------------------------%
+
+% Oblika strani
+\textwidth 15cm
+\textheight 24cm
+\oddsidemargin.5cm
+\evensidemargin.5cm
+\topmargin-5mm
+\addtolength{\footskip}{10pt}
+\pagestyle{plain}
+\overfullrule=15pt % oznaci predlogo vrstico
+
+% Naslovi
+%\titleformat{\section}
+%{\normalfont\Large\bfseries\centering\MakeUppercase}{\thesection}{1em}{}
+%
+%\titleformat{\subsection}
+%{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+%
+%\titleformat{\subsubsection}
+%{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+
+% Matematicna okolja (tekst napisan pokoncno)
+\theoremstyle{definition}
+\newtheorem{definicija}{Definicija}[section]
+\newtheorem{zgled}[definicija]{Zgled}
+\newtheorem{opomba}[definicija]{Opomba}
+
+\renewcommand\endzgled{\hfill$\diamondsuit$}
+
+% Matematicna okolja (tekst napisan posevno)
+\theoremstyle{plain} 
+\newtheorem{lema}[definicija]{Lema}
+\newtheorem{izrek}[definicija]{Izrek}
+\newtheorem{trditev}[definicija]{Trditev}
+\newtheorem{posledica}[definicija]{Posledica}
+
+
+
+% Ukaz za slovarsko geslo
+\newlength{\odstavek}
+\setlength{\odstavek}{\parindent}
+\newcommand{\geslo}[2]{\noindent\textbf{#1}\hspace*{3mm}\hangindent=\parindent\hangafter=1 #2}
+
+% Podatki o delu
+\newcommand{\imeavtorja}{Anej Rozman} 
+\newcommand{\naslovdela}{KAJ JE PROGRAM?} 
+\newcommand{\letnica}{2941} 
+
+%-----------------------------------------DODATNI UKAZI--------------------------------------------%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\1}{\mathds{1}}
+
+
+
+%------------------------------------------NASLOVNE STRANI-----------------------------------------%
+
+\begin{document}
+
+\thispagestyle{empty}
+\vfill
+
+\begin{center}{\large}
+\imeavtorja\\[2mm]
+{\bf \naslovdela}\\[10mm]
+Osebni zapiski sintakse jezikov \textit{Python, C++} in \textit{OCaml} ter nekaterih 
+(mogo"ce uporabnih) algoritmov\\[1cm]
+\end{center}
+\vfill
+
+\noindent{\large
+London, \letnica}
+\pagebreak
+
+\thispagestyle{empty}
+\tableofcontents
+\pagebreak
+
+
+%---------------------------------------------PYTHON-----------------------------------------------%
+\section{Python}
+Samo test "ce stvarno \index{Python} deluje.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%---------------------------------------------C++--------------------------------------------------%
+\pagebreak
+\section{C++}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%---------------------------------------------OCAML------------------------------------------------%
+\pagebreak
+\section{OCaml}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%---------------------------------------------PSA--------------------------------------------------%
+\pagebreak
+\section{Podatkovne strukture in algoritmi}
+
+
+
+
+
+
+
+%------------------------------------------STVARNO KAZALO------------------------------------------%
+\pagebreak
+\printindex
+\end{document}
